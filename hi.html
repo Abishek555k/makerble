@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>makerble</title>
+    <link rel="stylesheet" href="hi.css">
+    <link rel="stylesheet" href="three.css">
+    <link rel="stylesheet" href="ka.css">
+    <link rel="stylesheet" href="right.css">
+</head>
+<body>
+   
+   
+
+<div>
+    <header class="header">
+        
+            <div class="logo"><img class="ttt" src="imgg/m-1.png"></div>
+            <nav class="nav-menu">
+                <div class="dropdown">
+                    <button class="dropbtn">My Apps  </button>
+                    <div class="dropdown-content">
+                        <a href="#">App 1</a>
+                        <a href="#">App 2</a>
+                        <a href="#">App 3</a>
+                    </div>
+                </div>
+                <a class="home" href="C:\Users\abish\OneDrive\Desktop\makerble\index.html">|  Home  |</a> 
+                <a href="#">Explore</a>
+
+            
+            </nav>
+            <div class="search-bar">
+                <input type="text" placeholder="Search for contacts">
+            </div>
+            <div class="right-section">
+                <a href="#" class="icon bell">🔔 <span class="badge">11</span></a>
+                <a href="#" class="icon mail">✉ <span class="badge">14</span></a>
+                <a href="#" class="user-profile">Yael Adamson-Brown</a>
+                <button class="create-button">+ Create</button>
+             
+                <button class="more-button">More</button>
+                <div class="three-dots" onclick="openPage()">&#x22EE;</div>
+            </div>    
+       
+        </div>
+    </header>
+      
+
+<!-- Sliding page -->
+<div id="slide-page" class="slide-page">
+    <div class="close-btn" onclick="closePage()">X</div>
+    <div class="content">
+        <a  href="C:\Users\abish\OneDrive\Desktop\makerble\down.html"><button class="side-let" style="background-color: aqua;" > <h4 class="tap" >1. about us</h4></button> </a><br>
+        
+        <a  href="C:\Users\abish\OneDrive\Desktop\makerble\left.html"><button class="side-let" style="background-color: aqua;"><h4 class="tap">2. followers</h4></button></a> <br>
+       <a  href="C:\Users\abish\OneDrive\Desktop\makerble\index.html"><button class="side-let" style="background-color: aqua;"> <h4 class="tap">3. home</h4></button></a> <br>
+       <a href="C:\Users\abish\OneDrive\Desktop\makerble\hi.html" > <button class="side-let" style="background-color: aqua;"> <h4 class="tap" >3. project,process,task</h4></button> </a><br>
+       
+    </div>
+</div>
+
+
+ <!-- Projects Section -->
+ <div class="container-1">
+    <h2>project</h2>
+    <button class="new-album-btn">+ New project</button>
+    <ul class="album-list">
+        <li class="album-item">
+            <div class="album-info">
+                <img src="imgg\marker.jpg" alt="Portfolio Icon">
+                <span>4359 test</span>
+            </div>
+            <div class="settings-icon">&#9881;</div>
+        </li>
+        <li class="album-item">
+            <div class="album-info">
+                <img src="imgg\marker.jpg" alt="Partners Icon">
+                <span>a test 5146</span>
+            </div>
+            <div class="settings-icon">&#9881;</div>
+        </li>
+        <li class="album-item">
+            <div class="album-info">
+                <img src="imgg/m-1.png" alt="Lottery Fund Icon">
+                <span>A training project</span>
+            </div>
+            <div class="settings-icon">&#9881;</div>
+        </li>
+    </ul>
+    <div class="show-all">
+        <a href="#">Show All</a>
+    </div>
+</div>
+
+<center>
+
+    <div class="container">
+        <div class="header">
+            <h2>Personal Progress</h2>
+            <a href="#" class="go-to-board">Go to board</a>
+        </div>
+
+        <div class="progress-item">
+            <div class="circle orange"></div>
+            <span class="text">Are either of your parents living?</span>
+            <div class="progress-bar">
+                <div class="progress green" style="width: 70%;"></div>
+                <span class="progress-value">7</span>
+            </div>
+            <div class="add-button">+</div>
+        </div>
+
+        <div class="progress-item">
+            <div class="circle blue"></div>
+            <span class="text">Do you belong to any groups in whi...</span>
+            <div class="progress-bar">
+                <div class="progress blue" style="width: 60%;"></div>
+                <span class="progress-value">6</span>
+            </div>
+            <div class="add-button">+</div>
+        </div>
+
+        <div class="progress-item">
+            <div class="circle pink"></div>
+            <span class="text">1-2-1 Events</span>
+            <div class="progress-bar">
+                <div class="progress red" style="width: 90%;"></div>
+                <span class="progress-value">27</span>
+            </div>
+            <div class="add-button">+</div>
+        </div>
+
+
+        <!-- Hidden data that will be shown when "Show All" is clicked -->
+         <div class="main-i">
+        <div class="extra-data hidden">
+            <div class="progress-item">
+                <div class="circle orange"></div>
+                <span class="text">Have you ever traveled abroad?</span>
+                <div class="progress-bar">
+                    <div class="progress green" style="width: 50%;"></div>
+                    <span class="progress-value">5</span>
+                </div>
+                <div class="add-button">+</div>
+            </div>
+
+            <div class="progress-item">
+                <div class="circle blue"></div>
+                <span class="text">Do you have any siblings?</span>
+                <div class="progress-bar">
+                    <div class="progress blue" style="width: 80%;"></div>
+                    <span class="progress-value">8</span>
+                </div>
+                <div class="add-button">+</div>
+            </div>
+        </div>
+
+        <a href="#" class="show-all" id="showAllBtn">Show All</a>
+    </div>
+    </div>
+</center>
+
+<div class="task-list-container">
+    <div class="task-header">
+        <h2>Tasks</h2>
+        <div class="task-count">
+            <span class="to-do">25 To Do</span> | <span class="done">43 Done</span>
+        </div>
+    </div>
+
+    <div class="task-input">
+        <input type="text" id="new-task" placeholder="Add your next task">
+        <button onclick="addTask()">Save Task</button>
+    </div>
+
+    <div id="task-list">
+        <!-- Task items will be dynamically generated here -->
+    </div>
+</div>
+
+
+<script src="three.js"></script>
+<script src="right.js"></script>
+<script src="ka.js"></script>
+</body>
+</html>
+
+<script src="three.js"></script>
+    
+</head>
+<body>

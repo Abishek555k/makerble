@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Makerble</title>
+    <link rel="stylesheet" href="left.css">
+    <link rel="stylesheet" href="three.css">
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        footer {
+            background-color: #f7f7f7;
+            padding:  0;
+            border-top: 5px solid transparent;
+            position: relative;
+            
+        }
+
+        .rainbow-bar {
+            height: 10px;
+            background: linear-gradient(to right, 
+                red, orange, yellow, green, blue, indigo, violet);
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            padding: 20px 0;
+        }
+
+        .column {
+            width: 23%;
+            padding: 2px;
+        }
+
+        .column h3 {
+            font-size: 1.1rem;
+            margin-bottom: 10px;
+            font-weight: 700;
+        }
+
+        .column ul {
+            list-style: none;
+        }
+
+        .column ul li {
+            margin-bottom: 8px;
+        }
+
+        .column ul li a {
+            text-decoration: none;
+            color: #333;
+            font-size: 0.9rem;
+        }
+
+        .contact-info {
+            margin-top: 20px;
+            font-size: 0.9rem;
+            color: #666;
+        }
+
+        .contact-info a {
+            color: #333;
+            text-decoration: none;
+        }
+
+        .social-icons {
+            display: flex;
+            gap: 15px;
+            margin-top: 20px;
+        }
+
+        .social-icons a {
+            display: inline-block;
+            width: 35px;
+            height: 35px;
+            background-color: #ddd;
+            border-radius: 50%;
+            text-align: center;
+            line-height: 35px;
+            color: #fff;
+            font-size: 1.2rem;
+        }
+
+        .social-icons a.linkedin {
+            background-color: #0077B5;
+        }
+
+        .social-icons a.youtube {
+            background-color: #FF0000;
+        }
+
+        .social-icons a.instagram {
+            background-color: #E4405F;
+        }
+
+        .copyright {
+            text-align: center;
+            margin-top: 20px;
+            font-size: 0.8rem;
+            color: #999;
+        }
+        .social-icons a.facebook{
+            background-color:rgb(44, 25, 157);
+        }
+        
+        
+        .makerblebg{
+            background: linear-gradient(to right, 
+            red, orange, yellow, green, blue, indigo, violet);
+            display: inline;
+            margin-bottom: 2%;
+        }
+    </style>
+</head>
+<body>
+    <div class="ppp">
+        <header class="header">
+            
+                <div class="logo"><img class="ttt" src="imgg/m-1.png"></div>
+                <nav class="nav-menu">
+                    <div class="dropdown">
+                        <button class="dropbtn">My Apps  </button>
+                        <div class="dropdown-content">
+                            <a href="#">App 1</a>
+                            <a href="#">App 2</a>
+                            <a href="#">App 3</a>
+                        </div>
+                    </div>
+                    <a class="home" href="C:\Users\abish\OneDrive\Desktop\makerble\index.html">|  Home  |</a> 
+                    <a href="#">Explore</a>
+    
+                
+                </nav>
+                <div class="search-bar">
+                    <input type="text" placeholder="Search for contacts">
+                </div>
+                <div class="right-section">
+                    <a href="#" class="icon bell">🔔 <span class="badge">11</span></a>
+                    <a href="#" class="icon mail">✉ <span class="badge">14</span></a>
+                    <a href="#" class="user-profile">Yael Adamson-Brown</a>
+                    <button class="create-button">+ Create</button>
+                 
+                    <button class="more-button">More</button>
+                    <div class="three-dots" onclick="openPage()">&#x22EE;</div>
+                </div>    
+           
+            </div>
+        </header>
+          <div class="container">
+    
+    <!-- Sliding page -->
+    <div id="slide-page" class="slide-page">
+        <div class="close-btn" onclick="closePage()">X</div>
+        <div class="content">
+            <a  href="C:\Users\abish\OneDrive\Desktop\makerble\down.html"><button class="side-let" style="background-color: aqua;" > <h4 class="tap" >1. about us</h4></button> </a><br>
+        
+            <a  href="C:\Users\abish\OneDrive\Desktop\makerble\left.html"><button class="side-let" style="background-color: aqua;"><h4 class="tap">2. followers</h4></button></a> <br>
+           <a  href="C:\Users\abish\OneDrive\Desktop\makerble\index.html"><button class="side-let" style="background-color: aqua;"> <h4 class="tap">3. home</h4></button></a> <br>
+           <a href="C:\Users\abish\OneDrive\Desktop\makerble\hi.html" > <button class="side-let" style="background-color: aqua;"> <h4 class="tap" >3. project,process,task</h4></button> </a><br>
+           
+        </div>
+    </div>
+  </div>
+
+    <footer>
+        <div class="rainbow-bar"></div>
+        <div class="container">
+          
+            <div class="column">
+                <h3 class="makerblebg">Makerble</h3>
+                <ul>
+                    <li><a href="#">About us</a></li>
+                    <li><a href="#">Terms & Conditions</a></li>
+                    <li><a href="#">Privacy & Cookies</a></li>
+                </ul>
+            </div>
+            <div class="column">
+                <h3>ORGANISATIONS</h3>
+                <ul>
+                    <li><a href="#">Control Panel</a></li>
+                    <li><a href="#">Discover The Marketplace</a></li>
+                    <li><a href="#">Create Organisation Account</a></li>
+                </ul>
+            </div>
+            <div class="column">
+                <h3>YOUR ACCOUNT</h3>
+                <ul>
+                    <li><a href="#">Library</a></li>
+                    <li><a href="#">Profile</a></li>
+                    <li><a href="#">Projects</a></li>
+                    <li><a href="#">Help</a></li>
+                </ul>
+            </div>
+            <div class="column">
+                <h3>EXPLORE</h3>
+                <ul>
+                    <li><a href="#">Metrics</a></li>
+                    <li><a href="#">Networks</a></li>
+                    <li><a href="#">Strategies</a></li>
+                    <li><a href="#">Projects</a></li>
+                    <li><a href="#">Studies</a></li>
+                    <li><a href="#">Surveys</a></li>
+                    <li><a href="#">Tips</a></li>
+                    <li><a href="#">Vouchers</a></li>
+                </ul>
+                <div class="social-icons">
+                    <a href="#" class="linkedin">in</a>
+                    <a href="#" class="youtube">▶</a>
+                    <a href="#" class="instagram">📸</a>
+                    <a href="#" class="facebook">f</a>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="contact-info">
+                Contact Us: <a href="mailto:contact@makerble.com">contact@makerble.com</a> | <a href="tel:02081236253">020 8123 6253</a>
+            </div>
+        </div>
+        <div class="copyright">
+            &copy; Makerble 2023
+        </div>
+    </footer>
+
+    <script src="three.js"></script>
+</body>
+</html>

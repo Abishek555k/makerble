@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>mekerble</title>
+    <link rel="stylesheet" href="left.css">
+    <link rel="stylesheet" href="three.css">
+</head>
+<body>
+   <div>
+    <header class="header">
+        
+            <div class="logo"><img class="ttt" src="imgg/m-1.png"></div>
+            <nav class="nav-menu">
+                <div class="dropdown">
+                    <button class="dropbtn">My Apps  </button>
+                    <div class="dropdown-content">
+                        <a href="#">App 1</a>
+                        <a href="#">App 2</a>
+                        <a href="#">App 3</a>
+                    </div>
+                </div>
+                <a class="home" href="C:\Users\abish\OneDrive\Desktop\makerble\index.html">|  Home  |</a> 
+                <a href="#">Explore</a>
+
+            
+            </nav>
+            <div class="search-bar">
+                <input type="text" placeholder="Search for contacts">
+            </div>
+            <div class="right-section">
+                <a href="#" class="icon bell">🔔 <span class="badge">11</span></a>
+                <a href="#" class="icon mail">✉ <span class="badge">14</span></a>
+                <a href="#" class="user-profile">Yael Adamson-Brown</a>
+                <button class="create-button">+ Create</button>
+             
+                <button class="more-button">More</button>
+                <div class="three-dots" onclick="openPage()">&#x22EE;</div>
+            </div>    
+       
+        </div>
+    </header>
+      <div class="container">
+
+<!-- Sliding page -->
+<div id="slide-page" class="slide-page">
+    <div class="close-btn" onclick="closePage()" style="color: red;">X</div>
+    <div class="content">
+        <a  href="C:\Users\abish\OneDrive\Desktop\makerble\down.html"><button class="side-let" style="background-color: aqua;" > <h4 class="tap" >1. about us</h4></button> </a><br>
+        
+        <a  href="C:\Users\abish\OneDrive\Desktop\makerble\left.html"><button class="side-let" style="background-color: aqua;"><h4 class="tap">2. followers</h4></button></a> <br>
+       <a  href="C:\Users\abish\OneDrive\Desktop\makerble\index.html"><button class="side-let" style="background-color: aqua;"> <h4 class="tap">3. home</h4></button></a> <br>
+       <a href="C:\Users\abish\OneDrive\Desktop\makerble\hi.html" > <button class="side-let" style="background-color: aqua;"> <h4 class="tap" >3. project,process,task</h4></button> </a><br>
+       
+    </div>
+</div>
+
+        <!-- Contacts Section -->
+        <div class="container-1">
+            <h2>15 contacts</h2>
+            <button class="new-album-btn">+ New contacts</button>
+            <ul class="album-list">
+                <li class="album-item">
+                    <div class="album-info">
+                        <img src="imgg\marker.jpg" alt="Portfolio Icon">
+                        <span>herry</span>
+                    </div>
+                    <div class="settings-icon">&#9881;</div>
+                </li>
+                <li class="album-item">
+                    <div class="album-info">
+                        <img src="imgg\marker.jpg" alt="Partners Icon">
+                        <span>siyamadit</span>
+                    </div>
+                    <div class="settings-icon">&#9881;</div>
+                </li>
+                <li class="album-item">
+                    <div class="album-info">
+                        <img src="imgg\marker.jpg" alt="Lottery Fund Icon">
+                        <span>claire</span>
+                    </div>
+                    <div class="settings-icon">&#9881;</div>
+                </li>
+            </ul>
+            <div class="show-all">
+                <a href="#">Show All</a>
+            </div>
+        </div>
+
+        <!-- Projects Section -->
+        <div class="container-1">
+            <h2>project</h2>
+            <button class="new-album-btn">+ New project</button>
+            <ul class="album-list">
+                <li class="album-item">
+                    <div class="album-info">
+                        <img src="imgg\marker.jpg" alt="Portfolio Icon">
+                        <span>4359 test</span>
+                    </div>
+                    <div class="settings-icon">&#9881;</div>
+                </li>
+                <li class="album-item">
+                    <div class="album-info">
+                        <img src="imgg\marker.jpg" alt="Partners Icon">
+                        <span>a test 5146</span>
+                    </div>
+                    <div class="settings-icon">&#9881;</div>
+                </li>
+                <li class="album-item">
+                    <div class="album-info">
+                        <img src="imgg/m-1.png" alt="Lottery Fund Icon">
+                        <span>A training project</span>
+                    </div>
+                    <div class="settings-icon">&#9881;</div>
+                </li>
+            </ul>
+            <div class="show-all">
+                <a href="#">Show All</a>
+            </div>
+        </div>
+
+        <!-- Albums Section -->
+        <div class="container-1">
+            <h2>Albums</h2>
+            <button class="new-album-btn">+ New Album</button>
+            <ul class="album-list">
+                <li class="album-item">
+                    <div class="album-info">
+                        <img src="imgg\marker.jpg" alt="Portfolio Icon">
+                        <span>2021 Portfolio</span>
+                    </div>
+                    <div class="settings-icon">&#9881;</div>
+                </li>
+                <li class="album-item">
+                    <div class="album-info">
+                        <img src="imgg\marker.jpg" alt="Partners Icon">
+                        <span>All Partners</span>
+                    </div>
+                    <div class="settings-icon">&#9881;</div>
+                </li>
+                <li class="album-item">
+                    <div class="album-info">
+                        <img src="imgg/th (1).jpeg" alt="Lottery Fund Icon">
+                        <span>Big Lottery Fund</span>
+                    </div>
+                    <div class="settings-icon">&#9881;</div>
+                </li>
+            </ul>
+            <div class="show-all">
+                <a href="#">Show All</a>
+            </div>
+        </div>
+        <!-- Organisations Section -->
+        <div class="container-1">
+            <div class="header">
+                <h2>Organisations</h2>
+            </div>
+            <div class="organisations">
+                <div class="organisation-item">
+                    <img src="imgg/th (2).jpeg" alt="follower" class="follower-img">
+                    <p>An Organisation Demo - Admin</p>
+                </div>
+                <div class="organisation-item">
+                    <img src="imgg\marker.jpg" alt="follower" class="follower-img">
+                    <p>A Showcase International Development Education Charity - Member</p>
+                </div>
+                <div class="organisation-item">
+                    <img src="imgg\marker.jpg" alt="follower" class="follower-img">
+                    <p>Oak Tree Secondary School - Admin</p>
+                </div>
+                <a href="#" class="show-all">Show All</a>
+            </div>
+        </div>
+
+        <!-- Followers Section -->
+        <div class="container-1">
+            <div class="header">
+                <h2>Followers</h2>
+            </div>
+            <div class="followers">
+                <img src="imgg\marker.jpg" alt="follower" class="follower-img">
+                <img src="imgg\marker.jpg" alt="follower" class="follower-img">
+                <img src="imgg/th (3).jpeg" alt="follower" class="follower-img">
+                <img src="imgg/th (4).jpeg" alt="follower" class="follower-img">
+                <a href="#" class="show-all">Show All</a>
+            </div>
+        </div>
+
+        <!-- People You Follow Section -->
+        <div class="container-1">
+            <div class="header">
+                <h2>People You Follow</h2>
+            </div>
+            <div class="people-follow">
+                <img src="imgg/th (5).jpeg" alt="person" class="person-img">
+                <img src="imgg/th (6).jpeg" alt="person" class="person-img">
+                <img src="imgg/th (7).jpeg" alt="person" class="person-img">
+                <img src="imgg/th (8).jpeg" alt="person" class="person-img">
+                <img src="imgg/th (9).jpeg" alt="person" class="person-img">
+                <a href="#" class="show-all">Show All</a>
+            </div>
+        </div>
+    </div>
+    <script src="three.js"></script>
+</body>
+</html>

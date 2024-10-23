@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Progress</title>
+    <link rel="stylesheet" href="right.css">
+    <link rel="stylesheet" href="ka.css">
+    <link rel="stylesheet" href="left.css">
+    <link rel="stylesheet" href="three.css">
+    
+</head>
+<body>
+
+
+    <div>
+        <header class="header">
+            
+                <div class="logo"><img class="ttt" src="imgg/m-1.png"></div>
+                <nav class="nav-menu">
+                    <div class="dropdown">
+                        <button class="dropbtn">My Apps  </button>
+                        <div class="dropdown-content">
+                            <a href="#">App 1</a>
+                            <a href="#">App 2</a>
+                            <a href="#">App 3</a>
+                        </div>
+                    </div>
+                    <a class="home" href="C:\Users\abish\OneDrive\Desktop\makerble\ce.html">|  Home  |</a> 
+                    <a href="#">Explore</a>
+    
+                
+                </nav>
+                <div class="search-bar">
+                    <input type="text" placeholder="Search for contacts">
+                </div>
+                <div class="right-section">
+                    <a href="#" class="icon bell">🔔 <span class="badge">11</span></a>
+                    <a href="#" class="icon mail">✉ <span class="badge">14</span></a>
+                    <a href="#" class="user-profile">Yael Adamson-Brown</a>
+                    <button class="create-button">+ Create</button>
+                 
+                    <button class="more-button">More</button>
+                    <div class="three-dots" onclick="openPage()">&#x22EE;</div>
+                </div>    
+           
+            </div>
+        </header>
+          
+    
+    <!-- Sliding page -->
+    <div id="slide-page" class="slide-page">
+        <div class="close-btn" onclick="closePage()">X</div>
+        <div class="content">
+            <p>1. pp</p>
+            <p>2. mm</p>
+            <p>3. home</p>
+        </div>
+    </div>
+
+
+     <!-- Projects Section -->
+     <div class="container-1">
+        <h2>project</h2>
+        <button class="new-album-btn">+ New project</button>
+        <ul class="album-list">
+            <li class="album-item">
+                <div class="album-info">
+                    <img src="imgg\marker.jpg" alt="Portfolio Icon">
+                    <span>4359 test</span>
+                </div>
+                <div class="settings-icon">&#9881;</div>
+            </li>
+            <li class="album-item">
+                <div class="album-info">
+                    <img src="imgg\marker.jpg" alt="Partners Icon">
+                    <span>a test 5146</span>
+                </div>
+                <div class="settings-icon">&#9881;</div>
+            </li>
+            <li class="album-item">
+                <div class="album-info">
+                    <img src="imgg/m-1.png" alt="Lottery Fund Icon">
+                    <span>A training project</span>
+                </div>
+                <div class="settings-icon">&#9881;</div>
+            </li>
+        </ul>
+        <div class="show-all">
+            <a href="#">Show All</a>
+        </div>
+    </div>
+    
+    <center>
+
+        <div class="container">
+            <div class="header">
+                <h2>Personal Progress</h2>
+                <a href="#" class="go-to-board">Go to board</a>
+            </div>
+    
+            <div class="progress-item">
+                <div class="circle orange"></div>
+                <span class="text">Are either of your parents living?</span>
+                <div class="progress-bar">
+                    <div class="progress green" style="width: 70%;"></div>
+                    <span class="progress-value">7</span>
+                </div>
+                <div class="add-button">+</div>
+            </div>
+    
+            <div class="progress-item">
+                <div class="circle blue"></div>
+                <span class="text">Do you belong to any groups in whi...</span>
+                <div class="progress-bar">
+                    <div class="progress blue" style="width: 60%;"></div>
+                    <span class="progress-value">6</span>
+                </div>
+                <div class="add-button">+</div>
+            </div>
+    
+            <div class="progress-item">
+                <div class="circle pink"></div>
+                <span class="text">1-2-1 Events</span>
+                <div class="progress-bar">
+                    <div class="progress red" style="width: 90%;"></div>
+                    <span class="progress-value">27</span>
+                </div>
+                <div class="add-button">+</div>
+            </div>
+    
+    
+            <!-- Hidden data that will be shown when "Show All" is clicked -->
+             <div class="main-i">
+            <div class="extra-data hidden">
+                <div class="progress-item">
+                    <div class="circle orange"></div>
+                    <span class="text">Have you ever traveled abroad?</span>
+                    <div class="progress-bar">
+                        <div class="progress green" style="width: 50%;"></div>
+                        <span class="progress-value">5</span>
+                    </div>
+                    <div class="add-button">+</div>
+                </div>
+    
+                <div class="progress-item">
+                    <div class="circle blue"></div>
+                    <span class="text">Do you have any siblings?</span>
+                    <div class="progress-bar">
+                        <div class="progress blue" style="width: 80%;"></div>
+                        <span class="progress-value">8</span>
+                    </div>
+                    <div class="add-button">+</div>
+                </div>
+            </div>
+    
+            <a href="#" class="show-all" id="showAllBtn">Show All</a>
+        </div>
+        </div>
+    </center>
+
+    <div class="task-list-container">
+        <div class="task-header">
+            <h2>Tasks</h2>
+            <div class="task-count">
+                <span class="to-do">25 To Do</span> | <span class="done">43 Done</span>
+            </div>
+        </div>
+
+        <div class="task-input">
+            <input type="text" id="new-task" placeholder="Add your next task">
+            <button onclick="addTask()">Save Task</button>
+        </div>
+
+        <div id="task-list">
+            <!-- Task items will be dynamically generated here -->
+        </div>
+    </div>
+    
+
+    <script src="three.js"></script>
+    <script src="right.js"></script>
+    <script src="ka.js"></script>
+</body>
+</html>
+
+<!--
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Progress</title>
+    <link rel="stylesheet" href="right.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h2>Personal Progress</h2>
+            <a href="#" class="go-to-board">Go to board</a>
+        </div>
+
+        <div class="progress-item">
+            <div class="circle orange"></div>
+            <span class="text">Are either of your parents living?</span>
+            <div class="progress-bar">
+                <div class="progress green" style="width: 70%;"></div>
+                <span class="progress-value">7</span>
+            </div>
+            <div class="add-button">+</div>
+        </div>
+
+        <div class="progress-item">
+            <div class="circle blue"></div>
+            <span class="text">Do you belong to any groups in whi...</span>
+            <div class="progress-bar">
+                <div class="progress blue" style="width: 60%;"></div>
+                <span class="progress-value">6</span>
+            </div>
+            <div class="add-button">+</div>
+        </div>
+
+        <div class="progress-item">
+            <div class="circle pink"></div>
+            <span class="text">1-2-1 Events</span>
+            <div class="progress-bar">
+                <div class="progress red" style="width: 90%;"></div>
+                <span class="progress-value">27</span>
+            </div>
+            <div class="add-button">+</div>
+        </div>
+
+        <a href="#" class="show-all">Show All</a>
+    </div>
+    <script src="right.js"></script>
+</body>
+</html>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #f5f5f5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    width: 400px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.header h2 {
+    font-size: 18px;
+}
+
+.go-to-board {
+    font-size: 14px;
+    color: #007bff;
+    text-decoration: none;
+}
+
+.progress-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.circle {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.orange {
+    background-color: #FF6347;
+}
+
+.blue {
+    background-color: #1E90FF;
+}
+
+.pink {
+    background-color: #FF1493;
+}
+
+.text {
+    flex: 1;
+    font-size: 14px;
+    color: #333;
+}
+
+.progress-bar {
+    display: flex;
+    align-items: center;
+    width: 100px;
+    height: 20px;
+    background-color: #f0f0f0;
+    border-radius: 10px;
+    margin-right: 10px;
+    position: relative;
+}
+
+.progress {
+    height: 100%;
+    border-radius: 10px;
+}
+
+.green {
+    background-color: #2E8B57;
+}
+
+.red {
+    background-color: #DC143C;
+}
+
+.progress-value {
+    position: absolute;
+    right: 10px;
+    color: white;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.add-button {
+    font-size: 20px;
+    color: #333;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+.show-all {
+    display: block;
+    text-align: right;
+    margin-top: 20px;
+    font-size: 14px;
+    color: #007bff;
+    text-decoration: none;
+}
+
+
+document.addEventListener('DOMContentLoaded', function () {
+    const showAllBtn = document.getElementById('showAllBtn');
+    const extraData = document.querySelector('.extra-data');
+    let isVisible = false;
+
+    showAllBtn.addEventListener('click', function (e) {
+        e.preventDefault();
+        if (isVisible) {
+            extraData.classList.add('hidden');
+            showAllBtn.textContent = 'Show All';
+        } else {
+            extraData.classList.remove('hidden');
+            showAllBtn.textContent = 'Show Less';
+        }
+        isVisible = !isVisible;
+    });
+});
+
+ <div>
+        <header class="header">
+            
+                <div class="logo"><img class="ttt" src="imgg/m-1.png"></div>
+                <nav class="nav-menu">
+                    <div class="dropdown">
+                        <button class="dropbtn">My Apps  </button>
+                        <div class="dropdown-content">
+                            <a href="#">App 1</a>
+                            <a href="#">App 2</a>
+                            <a href="#">App 3</a>
+                        </div>
+                    </div>
+                    <a class="home" href="C:\Users\abish\OneDrive\Desktop\makerble\ce.html">|  Home  |</a> 
+                    <a href="#">Explore</a>
+    
+                
+                </nav>
+                <div class="search-bar">
+                    <input type="text" placeholder="Search for contacts">
+                </div>
+                <div class="right-section">
+                    <a href="#" class="icon bell">🔔 <span class="badge">11</span></a>
+                    <a href="#" class="icon mail">✉ <span class="badge">14</span></a>
+                    <a href="#" class="user-profile">Yael Adamson-Brown</a>
+                    <button class="create-button">+ Create</button>
+                 
+                    <button class="more-button">More</button>
+                    <div class="three-dots" onclick="openPage()">&#x22EE;</div>
+                </div>    
+           
+            </div>
+        </header>
+          <div class="container">
+    
+    <!-- Sliding page --
+    <div id="slide-page" class="slide-page">
+        <div class="close-btn" onclick="closePage()">X</div>
+        <div class="content">
+            <p>1. pp</p>
+            <p>2. mm</p>
+            <p>3. home</p>
+        </div>
+    </div>
+
+
+-->
